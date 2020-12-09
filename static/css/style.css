@@ -1,0 +1,182 @@
+html,body {
+    padding: 0;
+    margin: 0;   
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: Helvetica,Arial,sans-serif; 
+	text-align: center;
+
+}
+
+.form-control:focus{
+	border-color: #00861d;
+}
+
+.player1{
+	
+	
+	color: rgb(0, 173, 0);
+	font-weight: bolder;
+	font-size: 25px;
+	
+
+}
+
+
+
+
+
+.form-control:focus {
+	border-color: rgba(126, 239, 104, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  }
+
+  .form-control:focus-within {
+	border-color: rgba(126, 239, 104, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  }
+
+
+#redovi {
+	display:inline-block;
+	margin:auto;
+	/*margin-left:20%;*/
+	vertical-align: middle;
+	text-align:left;
+	
+	/*width:30%;*/
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+#kolone {
+	display:inline-block;
+	margin:auto;
+	/*margin-left:19.8%;*/
+	vertical-align: middle;
+	text-align:left;
+	margin-bottom:3px;
+	/*width:30%;*/
+}
+
+
+
+
+
+.dot {
+  position: absolute;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left:-3px;
+  margin-top:-3px;
+  /*margin: 0; */
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0px 0px 5px 0px rgb(51, 51, 51);
+  background: radial-gradient(circle at 30% 20%, white 1px, rgb(90, 90, 90)  3%, rgb(0, 0, 0) 60%, rgb(46, 46, 46)  100%); 
+}
+  /*background: radial-gradient(circle at 65% 15%, white 1px, dimgray  3%, rgb(0, 0, 0) 60%, dimgray  100%); 
+
+ */
+#dubina{
+	display:inline-block;
+	margin:auto;
+	/*margin-left:0%;*/
+	vertical-align: middle;
+	text-align:left;
+	margin-top:3px;
+	/*width:25%;*/
+}
+
+.player2{
+	
+	
+	color: rgb(233, 140, 0);
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+
+.box{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	background-image: url('/static/plain.jpg');
+	/*background-color: rgb(133, 133, 133);*/
+	line-height: 70px;
+}
+
+.moves{
+	text-align:center;
+	width: 200px;
+	height: 500px;
+	position: absolute;
+	line-height: 0%;
+	background-color: rgba(24, 26, 31, 0.698);
+	overflow-y:scroll; 
+	
+}
+p{
+	color:white;
+	font-size:12px;
+}
+
+.moves::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .moves::-webkit-scrollbar-track {
+	background: orange;        /* color of the tracking area */
+  }
+  
+  .moves::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 0, 0);    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
+
+
+.line{
+	position: absolute;
+	background-color: rgb(255, 255, 255);	
+	cursor: pointer;
+	z-index: 1;	
+	box-shadow: 1px 1px 5px 1px rgb(136, 136, 136) ;
+	
+
+}
+
+
+
+.lineh{
+	height: 7px;
+	width: 70px;
+	
+}
+
+.linev{
+	height: 70px;
+	width: 7px;
+}
+
+
+.line:hover{
+	background-color: black;
+	box-shadow: 0px 0px 3px 2px orange;
+}
+label{
+	color:white;
+}
+
+.line-active{
+	background-color: rgb(36, 36, 36);
+	box-shadow: 0px 0px 8px 0px rgb(200, 200, 200);
+}
+
