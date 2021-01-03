@@ -20,7 +20,6 @@ from myDots import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    url(r'^validate_ajax/$', views.validate_ajax, name='validate_ajax'),
     url(r'^validate_minimax/$', views.validate_minimax, name='validate_minimax'),
     url(r'^set_dubina/$', views.set_dubina, name='set_dubina'),
     url(r'^set_human/$', views.set_human, name='set_human'),
